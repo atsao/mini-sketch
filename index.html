@@ -1,0 +1,57 @@
+<!doctype html>
+<head>
+  <title>Mini Sketch</title>
+  
+  <script src="../js/jquery.js" type="text/javascript"></script>
+  <script src="../js/sketch.js" type="text/javascript"></script>
+  <style type="text/css">
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        font-family: Helvetica Neue, Arial, sans-serif;
+    }
+    #reset {
+        background: #efefef;
+        border: solid 1px #ddd;
+        color: #334ccd;
+        display: block;
+        margin: 10px auto;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.2s ease-out;
+        width: 200px;
+    }
+    #reset:hover {
+        background: #f9f9f9;
+        border: solid 1px #f9f9f9;
+    }
+    #grid-container {
+        display: block;
+        margin: 0 auto;
+    }
+    #grid-container:after {
+        clear: both;
+    }
+    .block {
+        border: solid 1px #bbb;
+        display: block;
+        float: left;
+    }
+    .block.active {
+        background: #234edd;
+    }
+  </style>
+  </head>
+
+<body>
+
+  <a href="javascript:resetGrid();" id="reset">Reset Grid</a>
+
+  <div id="grid-container"></div>
+
+</body>
+</html>
